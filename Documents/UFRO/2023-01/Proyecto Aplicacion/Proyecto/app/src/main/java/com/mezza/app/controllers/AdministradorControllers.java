@@ -1,9 +1,7 @@
-package com.Mezza.project.controllers;
+package com.mezza.app.controllers;
 
-import com.Mezza.project.models.AdminLoginDTO;
-import com.Mezza.project.models.AdminRegisterDTO;
-import com.Mezza.project.models.Administrador;
-import com.Mezza.project.services.AdministradorServices;
+import com.mezza.app.models.*;
+import com.mezza.app.services.AdministradorServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

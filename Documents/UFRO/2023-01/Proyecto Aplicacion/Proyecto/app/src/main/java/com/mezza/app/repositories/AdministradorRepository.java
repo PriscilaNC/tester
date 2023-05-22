@@ -1,6 +1,6 @@
 package com.mezza.app.repositories;
 
-import com.Mezza.project.models.Administrador;
+import com.mezza.app.models.Administrador;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

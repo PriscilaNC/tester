@@ -1,8 +1,8 @@
 package com.mezza.app.services;
 
-import com.Mezza.project.models.AdminLoginDTO;
-import com.Mezza.project.models.AdminRegisterDTO;
-import com.Mezza.project.models.Administrador;
+import com.mezza.app.models.AdminLoginDTO;
+import com.mezza.app.models.AdminRegisterDTO;
+import com.mezza.app.models.Administrador;
 import com.mezza.app.repositories.AdministradorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

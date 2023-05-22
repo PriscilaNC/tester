@@ -1,4 +1,4 @@
-package com.Mezza.project.models;
+package com.mezza.app.models;
 
 import jakarta.persistence.*;
 import lombok.*;

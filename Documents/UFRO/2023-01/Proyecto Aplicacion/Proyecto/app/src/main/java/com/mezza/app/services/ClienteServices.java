@@ -1,7 +1,7 @@
-package com.Mezza.project.services;
+package com.mezza.app.services;
 
-import com.Mezza.project.models.Cliente;
-import com.Mezza.project.repositories.ClienteRepository;
+import com.mezza.app.models.Cliente;
+import com.mezza.app.repositories.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

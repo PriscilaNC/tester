@@ -1,11 +1,9 @@
-package com.Mezza.project.controllers;
+package com.mezza.app.controllers;
 
-import com.Mezza.project.models.AdminRegisterDTO;
-import com.Mezza.project.models.Cliente;
-import com.Mezza.project.services.ClienteServices;
+
+import com.mezza.app.models.Cliente;
+import com.mezza.app.services.ClienteServices;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 

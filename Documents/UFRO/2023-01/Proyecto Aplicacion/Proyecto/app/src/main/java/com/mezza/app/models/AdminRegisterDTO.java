@@ -1,4 +1,4 @@
-package com.Mezza.project.models;
+package com.mezza.app.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,8 +1,6 @@
-package com.Mezza.project.models;
+package com.mezza.app.models;
 
 import lombok.*;
-
-import java.io.Serializable;
 
 @AllArgsConstructor
 @NoArgsConstructor
