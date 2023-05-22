@@ -1,11 +1,13 @@
-package com.Mezza.project.services;
+package com.mezza.app.services;
 
 import com.Mezza.project.models.AdminLoginDTO;
 import com.Mezza.project.models.AdminRegisterDTO;
 import com.Mezza.project.models.Administrador;
-import com.Mezza.project.repositories.AdministradorRepository;
+import com.mezza.app.repositories.AdministradorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 
 @Service
@@ -17,7 +19,7 @@ public class AdministradorServices {
     public void Registrar(AdminRegisterDTO adminRegisterDTO) throws Exception {
 
         verificarDatos(adminRegisterDTO);
-       // verificarEmail(adminRegisterDTO.getEmail());
+        verificarEmail(adminRegisterDTO.getEmail());
         Administrador admin = new Administrador();
         admin.setEmail(adminRegisterDTO.getEmail());
         admin.setContrasena(adminRegisterDTO.getContrasena());
@@ -59,10 +61,10 @@ public class AdministradorServices {
     }
 
 
-    /*private void verificarEmail(String email) throws Exception {
-        Optional<Administrador> admin = administradorRepository.findById(email);
+    private void verificarEmail(String email) throws Exception {
+        Optional<Administrador> admin = administradorRepository.findByEmail(email);
         if (admin.isPresent()) throw new Exception("Email ocupado");
-    }*/
+    }
 
     private void verificarDatos(AdminRegisterDTO adminRegisterDTO) throws Exception {
         if (adminRegisterDTO.getEmail() == null) throw new Exception("Email no ingresado");
